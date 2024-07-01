@@ -1,6 +1,6 @@
 /* style.css */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -16,7 +16,7 @@ header {
 }
 
 .logo img {
-    height: 40px;
+    height: 60px; /* Augmenté pour rendre le logo plus visible */
 }
 
 nav ul {
@@ -33,6 +33,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
 }
 
 main {
@@ -46,7 +47,18 @@ section {
     border-radius: 5px;
 }
 
-h1, h2, h3 {
+.section-title {
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
     color: #007BFF;
 }
 
@@ -119,6 +131,7 @@ footer {
 .content p {
     flex: 1;
     text-align: left;
+    font-family: 'Merriweather', sans-serif;
 }
 
 .content img {
@@ -128,8 +141,30 @@ footer {
     border-radius: 5px;
 }
 
+.service-section {
+    background: url('images/service.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+}
+
 .service-item {
     margin-bottom: 40px; /* Increased margin to add more space between blocks */
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+}
+
+.service-item h3, .service-item p {
+    color: white;
 }
 
 @media (max-width: 768px) {
@@ -148,15 +183,5 @@ footer {
 
     .content img {
         margin: 20px 0 0 0;
-        max-width: 100%;
-    }
-
-    .footer-content {
-        flex-direction: column;
-    }
-
-    .footer-section {
-        padding: 0;
-        margin-bottom: 20px;
     }
 }

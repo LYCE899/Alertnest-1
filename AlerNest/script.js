@@ -1,7 +1,4 @@
-// script.js
-
-// Example JavaScript functionality
-document.addEventListener("DOMContentLoaded", () => {
-    // Placeholder for adding interactive functionality
-    console.log("DOM fully loaded and parsed");
+// Placeholder for interactive features
+document.addEventListener('DOMContentLoaded', function() {
+    // Add any JavaScript code for interactive features here
 });
